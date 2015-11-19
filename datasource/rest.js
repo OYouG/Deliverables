@@ -39,6 +39,11 @@ Datasource.prototype = {
             date: "2015-3-15", //$TODO$ might have to change it to date format later,
             gross: 317917
 
+        },{
+            name: "Aladdin",
+            date: "2015-3-22", //$TODO$ might have to change it to date format later,
+            gross: 317917
+
         }];
 
         onSuccess(dummyData);

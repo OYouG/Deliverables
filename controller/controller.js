@@ -32,11 +32,20 @@ Controller.prototype = {
                     period: item.date
                 };
             }
-
             var thisDate = currentWeek[item.date];
             thisDate[item.name] = item.gross;
         }
+        
+        var processedData = [];
+        
+        for (var date in currentWeek){
+            if (currentWeek.hasOwnProperty(date)){
+                processedData.push(currentWeek[date]);
+            }
+        }
+        
         console.log(currentWeek);
+        console.log(processedData)
     }
 };
 
