@@ -50,7 +50,6 @@ ul.nav a:hover {
 ul.nav a:focus { 
     color: #fff; 
     background-color: #202020; !important
-    
 }
 
 .navbar {
@@ -71,8 +70,12 @@ ul.dropdown-menu.dropdown-user{
     color: #262626
 }
 
-.navbar-brand{
-    color: #fff;
+.navbar-default .navbar-brand{
+    color: #cccccc;
+}
+
+.navbar-default .navbar-brand:hover{
+    color: #ffffff;
 }
 
 .navbar-header{
