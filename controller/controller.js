@@ -117,7 +117,7 @@ Controller.prototype = {
         xkey: 'period',
         ykeys: ykeys,
         labels: ykeys,
-        lineColors: ['#003399','#660066','#ff6600','#ffcc00','#009900'],
+        lineColors: ['#660066','#003399','#E3170D','#79CDCD','#ff6600','#ffcc00','#009900'],
         pointSize: 2,
         hideHover: 'auto',
         resize: true

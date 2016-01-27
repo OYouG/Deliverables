@@ -253,6 +253,137 @@ Datasource.prototype = {
     getGrossTicketSales : function(start, end, onReady) {
         //$TODO$ to be replaced by an ajax call to the server
         var dummyData = [{
+            name: "Beautiful",
+            date: "2015-3-15", //$TODO$ might have to change it to date format later,
+            gross: 955472
+
+        },{
+            name: "Beautiful",
+            date: "2015-3-22", //$TODO$ might have to change it to date format later,
+            gross: 992794
+
+        },{
+            name: "Beautiful",
+            date: "2015-3-29", //$TODO$ might have to change it to date format later,
+            gross: 979932
+
+        },{
+            name: "Beautiful",
+            date: "2015-4-5", //$TODO$ might have to change it to date format later,
+            gross: 835956
+
+        },{
+            name: "Beautiful",
+            date: "2015-4-12", //$TODO$ might have to change it to date format later,
+            gross: 1057901
+
+        },{
+            name: "Beautiful",
+            date: "2015-4-19", //$TODO$ might have to change it to date format later,
+            gross: 1045281
+
+        },{
+            name: "Beautiful",
+            date: "2015-4-26", //$TODO$ might have to change it to date format later,
+            gross: 1049011
+
+        },{
+            name: "Beautiful",
+            date: "2015-5-3", //$TODO$ might have to change it to date format later,
+            gross: 1033009
+
+        },{
+            name: "Beautiful",
+            date: "2015-5-10", //$TODO$ might have to change it to date format later,
+            gross: 1075886
+
+        },{
+            name: "Beautiful",
+            date: "2015-5-17", //$TODO$ might have to change it to date format later,
+            gross: 1124463
+
+        },{
+            name: "Beautiful",
+            date: "2015-5-24", //$TODO$ might have to change it to date format later,
+            gross: 1145564
+
+        },{
+            name: "Beautiful",
+            date: "2015-5-31", //$TODO$ might have to change it to date format later,
+            gross: 909617
+
+        },{
+            name: "Beautiful",
+            date: "2015-6-7", //$TODO$ might have to change it to date format later,
+            gross: 964024
+
+        },{
+            name: "Beautiful",
+            date: "2015-6-14", //$TODO$ might have to change it to date format later,
+            gross: 993724
+
+        },{
+            name: "Beautiful",
+            date: "2015-6-21", //$TODO$ might have to change it to date format later,
+            gross: 993120
+
+        },{
+            name: "Beautiful",
+            date: "2015-6-28", //$TODO$ might have to change it to date format later,
+            gross: 1054035
+
+        },{
+            name: "Beautiful",
+            date: "2015-7-5", //$TODO$ might have to change it to date format later,
+            gross: 860890
+
+        },{
+            name: "Beautiful",
+            date: "2015-7-12", //$TODO$ might have to change it to date format later,
+            gross: 918122
+
+        },{
+            name: "Beautiful",
+            date: "2015-7-19", //$TODO$ might have to change it to date format later,
+            gross: 1023704
+
+        },{
+            name: "Beautiful",
+            date: "2015-7-26", //$TODO$ might have to change it to date format later,
+            gross: 986399
+
+        },{
+            name: "Beautiful",
+            date: "2015-8-2", //$TODO$ might have to change it to date format later,
+            gross: 946124
+
+        },{
+            name: "Beautiful",
+            date: "2015-8-9", //$TODO$ might have to change it to date format later,
+            gross: 956185
+
+        },{
+            name: "Beautiful",
+            date: "2015-8-16", //$TODO$ might have to change it to date format later,
+            gross: 945696
+
+        },{
+            name: "Beautiful",
+            date: "2015-8-23", //$TODO$ might have to change it to date format later,
+            gross: 886955
+
+        },{
+            name: "Beautiful",
+            date: "2015-8-30", //$TODO$ might have to change it to date format later,
+            gross: 901998
+
+        },{
+            name: "Beautiful",
+            date: "2015-9-6", //$TODO$ might have to change it to date format later,
+            gross: 1031197
+
+        },
+        {
             name: "Aladdin",
             date: "2015-3-15", //$TODO$ might have to change it to date format later,
             gross: 1320261
@@ -506,7 +637,1008 @@ Datasource.prototype = {
             date: "2015-5-17", //$TODO$ might have to change it to date format later,
             gross: 1601725
 
-        }];
+        },
+        
+        //ZACH HERE
+        {
+            name: "An American in Paris",
+            date: "2015-5-24", //$TODO$ might have to change it to date format later,
+            gross: 1349932
+
+        },{
+            name: "Aladdin",
+            date: "2015-5-24", //$TODO$ might have to change it to date format later,
+            gross: 1516241
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-5-24", //$TODO$ might have to change it to date format later,
+            gross: 1551726
+
+        },{
+            name: "The Lion King",
+            date: "2015-5-24", //$TODO$ might have to change it to date format later,
+            gross: 2066573
+
+        },{
+            name: "Wicked",
+            date: "2015-5-24", //$TODO$ might have to change it to date format later,
+            gross: 1776153
+
+        },
+        {
+            name: "An American in Paris",
+            date: "2015-5-31", //$TODO$ might have to change it to date format later,
+            gross: 1339416
+
+        },{
+            name: "Aladdin",
+            date: "2015-5-31", //$TODO$ might have to change it to date format later,
+            gross: 1469138
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-5-31", //$TODO$ might have to change it to date format later,
+            gross: 1417311
+
+        },{
+            name: "The Lion King",
+            date: "2015-5-31", //$TODO$ might have to change it to date format later,
+            gross: 2026910
+
+        },{
+            name: "Wicked",
+            date: "2015-5-31", //$TODO$ might have to change it to date format later,
+            gross: 1670922
+
+        },{
+            name: "An American in Paris",
+            date: "2015-6-7", //$TODO$ might have to change it to date format later,
+            gross: 1368733
+
+        },{
+            name: "Aladdin",
+            date: "2015-6-7", //$TODO$ might have to change it to date format later,
+            gross: 1535301
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-6-7", //$TODO$ might have to change it to date format later,
+            gross: 1478235
+
+        },{
+            name: "The Lion King",
+            date: "2015-6-7", //$TODO$ might have to change it to date format later,
+            gross: 1959636
+
+        },{
+            name: "Wicked",
+            date: "2015-6-7", //$TODO$ might have to change it to date format later,
+            gross: 1737141
+
+        },
+        {
+            name: "An American in Paris",
+            date: "2015-6-14", //$TODO$ might have to change it to date format later,
+            gross: 1399818
+
+        },{
+            name: "Aladdin",
+            date: "2015-6-14", //$TODO$ might have to change it to date format later,
+            gross: 1592508
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-6-14", //$TODO$ might have to change it to date format later,
+            gross: 1494235
+
+        },{
+            name: "The Lion King",
+            date: "2015-6-14", //$TODO$ might have to change it to date format later,
+            gross: 2102748
+
+        },{
+            name: "Wicked",
+            date: "2015-6-14", //$TODO$ might have to change it to date format later,
+            gross: 1954144
+
+        }
+        ,
+        {
+            name: "An American in Paris",
+            date: "2015-6-21", //$TODO$ might have to change it to date format later,
+            gross: 1440627
+
+        },{
+            name: "Aladdin",
+            date: "2015-6-21", //$TODO$ might have to change it to date format later,
+            gross: 1625996
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-6-21", //$TODO$ might have to change it to date format later,
+            gross: 1517932
+
+        },{
+            name: "The Lion King",
+            date: "2015-6-21", //$TODO$ might have to change it to date format later,
+            gross: 2154719
+
+        },{
+            name: "Wicked",
+            date: "2015-6-21", //$TODO$ might have to change it to date format later,
+            gross: 1947674
+
+        }
+        ,
+        {
+            name: "An American in Paris",
+            date: "2015-6-28", //$TODO$ might have to change it to date format later,
+            gross: 1433432
+
+        },{
+            name: "Aladdin",
+            date: "2015-6-28", //$TODO$ might have to change it to date format later,
+            gross: 1644687
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-6-28", //$TODO$ might have to change it to date format later,
+            gross: 1524995
+
+        },{
+            name: "The Lion King",
+            date: "2015-6-28", //$TODO$ might have to change it to date format later,
+            gross: 2120670
+
+        },{
+            name: "Wicked",
+            date: "2015-6-28", //$TODO$ might have to change it to date format later,
+            gross: 2047143
+
+        }
+        ,
+        {
+            name: "An American in Paris",
+            date: "2015-7-5", //$TODO$ might have to change it to date format later,
+            gross: 1348052
+
+        },{
+            name: "Aladdin",
+            date: "2015-7-5", //$TODO$ might have to change it to date format later,
+            gross: 1598424
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-7-5", //$TODO$ might have to change it to date format later,
+            gross: 1382123
+
+        },{
+            name: "The Lion King",
+            date: "2015-7-5", //$TODO$ might have to change it to date format later,
+            gross: 2143344
+
+        },{
+            name: "Wicked",
+            date: "2015-7-5", //$TODO$ might have to change it to date format later,
+            gross: 1864235
+
+        }
+        ,
+        {
+            name: "An American in Paris",
+            date: "2015-7-12", //$TODO$ might have to change it to date format later,
+            gross: 1406874
+
+        },{
+            name: "Aladdin",
+            date: "2015-7-12", //$TODO$ might have to change it to date format later,
+            gross: 1787409
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-7-12", //$TODO$ might have to change it to date format later,
+            gross: 1450864
+
+        },{
+            name: "The Lion King",
+            date: "2015-7-12", //$TODO$ might have to change it to date format later,
+            gross: 2308891
+
+        },{
+            name: "Wicked",
+            date: "2015-7-12", //$TODO$ might have to change it to date format later,
+            gross: 1900091
+
+        },{
+            name: "Aladdin",
+            date: "2015-7-19", //$TODO$ might have to change it to date format later,
+            gross: 1833662
+
+        },{
+            name: "An American in Paris",
+            date: "2015-7-19", //$TODO$ might have to change it to date format later,
+            gross: 1439178
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-7-19", //$TODO$ might have to change it to date format later,
+            gross: 1654152
+
+        },{
+            name: "The Lion King",
+            date: "2015-7-19", //$TODO$ might have to change it to date format later,
+            gross: 2620016
+
+        },{
+            name: "Wicked",
+            date: "2015-7-19", //$TODO$ might have to change it to date format later,
+            gross: 2167815
+
+        },
+        {
+            name: "Aladdin",
+            date: "2015-7-26", //$TODO$ might have to change it to date format later,
+            gross: 1831845
+
+        },{
+            name: "An American in Paris",
+            date: "2015-7-26", //$TODO$ might have to change it to date format later,
+            gross: 1429500
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-7-26", //$TODO$ might have to change it to date format later,
+            gross: 1505083
+
+        },{
+            name: "The Lion King",
+            date: "2015-7-26", //$TODO$ might have to change it to date format later,
+            gross: 2408501
+
+        },{
+            name: "Wicked",
+            date: "2015-7-26", //$TODO$ might have to change it to date format later,
+            gross: 2002631
+
+        }
+        ,{
+            name: "Aladdin",
+            date: "2015-8-2", //$TODO$ might have to change it to date format later,
+            gross: 1854406
+
+        },{
+            name: "An American in Paris",
+            date: "2015-8-2", //$TODO$ might have to change it to date format later,
+            gross: 1388951
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-8-2", //$TODO$ might have to change it to date format later,
+            gross: 1474355
+
+        },{
+            name: "The Lion King",
+            date: "2015-8-2", //$TODO$ might have to change it to date format later,
+            gross: 2624288
+
+        },{
+            name: "Wicked",
+            date: "2015-8-2", //$TODO$ might have to change it to date format later,
+            gross: 2118401
+
+        }
+        ,{
+            name: "Aladdin",
+            date: "2015-8-9", //$TODO$ might have to change it to date format later,
+            gross: 2078163
+
+        },{
+            name: "An American in Paris",
+            date: "2015-8-9", //$TODO$ might have to change it to date format later,
+            gross: 1356715
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-8-9", //$TODO$ might have to change it to date format later,
+            gross: 1605195
+
+        },{
+            name: "The Lion King",
+            date: "2015-8-9", //$TODO$ might have to change it to date format later,
+            gross: 2333537
+
+        },{
+            name: "Wicked",
+            date: "2015-8-9", //$TODO$ might have to change it to date format later,
+            gross: 1980056
+
+        }
+        ,{
+            name: "Aladdin",
+            date: "2015-8-16", //$TODO$ might have to change it to date format later,
+            gross: 1778617
+
+        },{
+            name: "An American in Paris",
+            date: "2015-8-16", //$TODO$ might have to change it to date format later,
+            gross: 1286907
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-8-16", //$TODO$ might have to change it to date format later,
+            gross: 1448473
+
+        },{
+            name: "The Lion King",
+            date: "2015-8-16", //$TODO$ might have to change it to date format later,
+            gross: 2165067
+
+        },{
+            name: "Wicked",
+            date: "2015-8-16", //$TODO$ might have to change it to date format later,
+            gross: 1913037
+
+        }
+        ,{
+            name: "Aladdin",
+            date: "2015-8-23", //$TODO$ might have to change it to date format later,
+            gross: 1720395
+
+        },{
+            name: "An American in Paris",
+            date: "2015-8-23", //$TODO$ might have to change it to date format later,
+            gross: 1241466
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-8-23", //$TODO$ might have to change it to date format later,
+            gross: 1443333
+
+        },{
+            name: "The Lion King",
+            date: "2015-8-23", //$TODO$ might have to change it to date format later,
+            gross: 1986190
+
+        },{
+            name: "Wicked",
+            date: "2015-8-23", //$TODO$ might have to change it to date format later,
+            gross: 1751974
+
+        }
+        ,{
+            name: "Aladdin",
+            date: "2015-8-30", //$TODO$ might have to change it to date format later,
+            gross: 1582804
+
+        },{
+            name: "An American in Paris",
+            date: "2015-8-30", //$TODO$ might have to change it to date format later,
+            gross: 1175966
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-8-30", //$TODO$ might have to change it to date format later,
+            gross: 1420003
+
+        },{
+            name: "The Lion King",
+            date: "2015-8-30", //$TODO$ might have to change it to date format later,
+            gross: 1835217
+
+        },{
+            name: "Wicked",
+            date: "2015-8-30", //$TODO$ might have to change it to date format later,
+            gross: 1492152
+
+        }
+        ,{
+            name: "Aladdin",
+            date: "2015-9-6", //$TODO$ might have to change it to date format later,
+            gross: 1530035
+
+        },{
+            name: "An American in Paris",
+            date: "2015-9-6", //$TODO$ might have to change it to date format later,
+            gross: 1202736
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-9-6", //$TODO$ might have to change it to date format later,
+            gross: 1508402
+
+        },{
+            name: "The Lion King",
+            date: "2015-9-6", //$TODO$ might have to change it to date format later,
+            gross: 1741459
+
+        },{
+            name: "Wicked",
+            date: "2015-9-6", //$TODO$ might have to change it to date format later,
+            gross: 1560536
+
+        }
+        ,{
+            name: "Aladdin",
+            date: "2015-9-13", //$TODO$ might have to change it to date format later,
+            gross: 1386167
+
+        },{
+            name: "An American in Paris",
+            date: "2015-9-13", //$TODO$ might have to change it to date format later,
+            gross: 1233473
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-9-13", //$TODO$ might have to change it to date format later,
+            gross: 1438096
+
+        },{
+            name: "The Lion King",
+            date: "2015-9-13", //$TODO$ might have to change it to date format later,
+            gross: 1727320
+
+        },{
+            name: "Wicked",
+            date: "2015-9-13", //$TODO$ might have to change it to date format later,
+            gross: 1472235
+
+        }
+        ,{
+            name: "Aladdin",
+            date: "2015-9-20", //$TODO$ might have to change it to date format later,
+            gross: 1450679
+
+        },{
+            name: "An American in Paris",
+            date: "2015-9-20", //$TODO$ might have to change it to date format later,
+            gross: 1373884
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-9-20", //$TODO$ might have to change it to date format later,
+            gross: 1478349
+
+        },{
+            name: "The Lion King",
+            date: "2015-9-20", //$TODO$ might have to change it to date format later,
+            gross: 1791791
+
+        },{
+            name: "Wicked",
+            date: "2015-9-20", //$TODO$ might have to change it to date format later,
+            gross: 1570534
+
+        }
+        ,{
+            name: "Aladdin",
+            date: "2015-9-27", //$TODO$ might have to change it to date format later,
+            gross: 1347833
+
+        },{
+            name: "An American in Paris",
+            date: "2015-9-27", //$TODO$ might have to change it to date format later,
+            gross: 1301184
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-9-27", //$TODO$ might have to change it to date format later,
+            gross: 1489768
+
+        },{
+            name: "The Lion King",
+            date: "2015-9-27", //$TODO$ might have to change it to date format later,
+            gross: 1758556
+
+        },{
+            name: "Wicked",
+            date: "2015-9-27", //$TODO$ might have to change it to date format later,
+            gross: 1426155
+
+        }
+        ,{
+            name: "Aladdin",
+            date: "2015-10-4", //$TODO$ might have to change it to date format later,
+            gross: 1365965
+
+        },{
+            name: "An American in Paris",
+            date: "2015-10-4", //$TODO$ might have to change it to date format later,
+            gross: 1351218
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-10-4", //$TODO$ might have to change it to date format later,
+            gross: 1489412
+
+        },{
+            name: "The Lion King",
+            date: "2015-10-4", //$TODO$ might have to change it to date format later,
+            gross: 1892393
+
+        },{
+            name: "Wicked",
+            date: "2015-10-4", //$TODO$ might have to change it to date format later,
+            gross: 1454569
+
+        }
+        
+        ,{
+            name: "Aladdin",
+            date: "2015-10-11", //$TODO$ might have to change it to date format later,
+            gross: 1641903
+
+        },{
+            name: "An American in Paris",
+            date: "2015-10-11", //$TODO$ might have to change it to date format later,
+            gross: 1423524
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-10-11", //$TODO$ might have to change it to date format later,
+            gross: 1576943
+
+        },{
+            name: "The Lion King",
+            date: "2015-10-11", //$TODO$ might have to change it to date format later,
+            gross: 2033230
+
+        },{
+            name: "Wicked",
+            date: "2015-10-11", //$TODO$ might have to change it to date format later,
+            gross: 1765268
+
+        }
+        
+        
+        
+        
+        // LAUREN
+        ,{
+            name: "An American in Paris",
+            date: "2016-1-3", //$TODO$ might have to change it to date format later,
+            gross: 1349302
+
+        },{
+            name: "An American in Paris",
+            date: "2015-12-27", //$TODO$ might have to change it to date format later,
+            gross: 1282028
+
+        },{
+            name: "An American in Paris",
+            date: "2015-12-20", //$TODO$ might have to change it to date format later,
+            gross: 1065073
+
+        },{
+            name: "An American in Paris",
+            date: "2015-12-13", //$TODO$ might have to change it to date format later,
+            gross: 1274776
+
+        },{
+            name: "An American in Paris",
+            date: "2015-12-6", //$TODO$ might have to change it to date format later,
+            gross: 1369903
+
+        },{
+            name: "An American in Paris",
+            date: "2015-11-29", //$TODO$ might have to change it to date format later,
+            gross: 1305328
+
+        },{
+            name: "An American in Paris",
+            date: "2015-11-22", //$TODO$ might have to change it to date format later,
+            gross: 1182624
+
+        },{
+            name: "An American in Paris",
+            date: "2015-11-15", //$TODO$ might have to change it to date format later,
+            gross: 1284816
+
+        }
+        //ALADDIN
+        ,{
+            name: "Aladdin",
+            date: "2016-1-3", //$TODO$ might have to change it to date format later,
+            gross: 2398110
+
+        },{
+            name: "Aladdin",
+            date: "2015-12-27", //$TODO$ might have to change it to date format later,
+            gross: 2095363
+
+        },{
+            name: "Aladdin",
+            date: "2015-12-20", //$TODO$ might have to change it to date format later,
+            gross: 1704819
+
+        },{
+            name: "Aladdin",
+            date: "2015-12-13", //$TODO$ might have to change it to date format later,
+            gross: 1586493
+
+        },{
+            name: "Aladdin",
+            date: "2015-12-6", //$TODO$ might have to change it to date format later,
+            gross: 1605875
+
+        },{
+            name: "Aladdin",
+            date: "2015-11-29", //$TODO$ might have to change it to date format later,
+            gross: 2048348
+
+        },{
+            name: "Aladdin",
+            date: "2015-11-22", //$TODO$ might have to change it to date format later,
+            gross: 1348846
+
+        },{
+            name: "Aladdin",
+            date: "2015-11-15", //$TODO$ might have to change it to date format later,
+            gross: 1467772
+
+        }
+        //WICKED
+        ,{
+            name: "Wicked",
+            date: "2016-1-3", //$TODO$ might have to change it to date format later,
+            gross: 2940096
+
+        },{
+            name: "Wicked",
+            date: "2015-12-27", //$TODO$ might have to change it to date format later,
+            gross: 2400920
+
+        },{
+            name: "Wicked",
+            date: "2015-12-20", //$TODO$ might have to change it to date format later,
+            gross: 1903218
+
+        },{
+            name: "Wicked",
+            date: "2015-12-13", //$TODO$ might have to change it to date format later,
+            gross: 1732290
+
+        },{
+            name: "Wicked",
+            date: "2015-12-6", //$TODO$ might have to change it to date format later,
+            gross: 1683339
+
+        },{
+            name: "Wicked",
+            date: "2015-11-29", //$TODO$ might have to change it to date format later,
+            gross: 2290873
+
+        },{
+            name: "Wicked",
+            date: "2015-11-22", //$TODO$ might have to change it to date format later,
+            gross: 1508157
+
+        },{
+            name: "Wicked",
+            date: "2015-11-15", //$TODO$ might have to change it to date format later,
+            gross: 1646786
+
+        }
+        //BOOK OF MORMON
+        ,{
+            name: "The Book of Mormon",
+            date: "2016-1-3", //$TODO$ might have to change it to date format later,
+            gross: 2024550
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-12-27", //$TODO$ might have to change it to date format later,
+            gross: 1891355
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-12-20", //$TODO$ might have to change it to date format later,
+            gross: 1613033
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-12-13", //$TODO$ might have to change it to date format later,
+            gross: 1593849
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-12-6", //$TODO$ might have to change it to date format later,
+            gross: 1536444
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-11-29", //$TODO$ might have to change it to date format later,
+            gross: 1771091
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-11-22", //$TODO$ might have to change it to date format later,
+            gross: 1402841
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-11-15", //$TODO$ might have to change it to date format later,
+            gross: 1487213
+
+        }
+        
+        //LION KING
+        ,{
+            name: "The Lion King",
+            date: "2016-1-3", //$TODO$ might have to change it to date format later,
+            gross: 2878505
+
+        },{
+            name: "The Lion King",
+            date: "2015-12-27", //$TODO$ might have to change it to date format later,
+            gross: 2588075
+
+        },{
+            name: "The Lion King",
+            date: "2015-12-20", //$TODO$ might have to change it to date format later,
+            gross: 2152296
+
+        },{
+            name: "The Lion King",
+            date: "2015-12-13", //$TODO$ might have to change it to date format later,
+            gross: 2008986
+
+        },{
+            name: "The Lion King",
+            date: "2015-12-6", //$TODO$ might have to change it to date format later,
+            gross: 1983820
+
+        },{
+            name: "The Lion King",
+            date: "2015-11-29", //$TODO$ might have to change it to date format later,
+            gross: 2436498
+
+        },{
+            name: "The Lion King",
+            date: "2015-11-22", //$TODO$ might have to change it to date format later,
+            gross: 1712500
+
+        },{
+            name: "The Lion King",
+            date: "2015-11-15", //$TODO$ might have to change it to date format later,
+            gross: 1633344
+
+        }
+        
+        //new start
+        ,{
+            name: "Aladdin",
+            date: "2015-11-8", //$TODO$ might have to change it to date format later,
+            gross: 1486244
+
+        },{
+            name: "An American in Paris",
+            date: "2015-11-8", //$TODO$ might have to change it to date format later,
+            gross: 1300297
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-11-8", //$TODO$ might have to change it to date format later,
+            gross: 1500520
+
+        },{
+            name: "The Lion King",
+            date: "2015-11-8", //$TODO$ might have to change it to date format later,
+            gross: 1500520
+
+        },{
+            name: "Wicked",
+            date: "2015-11-8", //$TODO$ might have to change it to date format later,
+            gross: 1583873
+
+        },
+        //
+        {
+            name: "Aladdin",
+            date: "2015-11-1", //$TODO$ might have to change it to date format later,
+            gross: 1243825
+
+        },{
+            name: "An American in Paris",
+            date: "2015-11-1", //$TODO$ might have to change it to date format later,
+            gross: 1122825
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-11-1", //$TODO$ might have to change it to date format later,
+            gross: 1377009
+
+        },{
+            name: "The Lion King",
+            date: "2015-11-1", //$TODO$ might have to change it to date format later,
+            gross: 1640663
+
+        },{
+            name: "Wicked",
+            date: "2015-11-1", //$TODO$ might have to change it to date format later,
+            gross: 1346649
+
+        },
+        //
+        {
+            name: "Aladdin",
+            date: "2015-10-25", //$TODO$ might have to change it to date format later,
+            gross: 1500798
+
+        },{
+            name: "An American in Paris",
+            date: "2015-10-25", //$TODO$ might have to change it to date format later,
+            gross: 1416287
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-10-25", //$TODO$ might have to change it to date format later,
+            gross: 1483464
+
+        },{
+            name: "The Lion King",
+            date: "2015-10-25", //$TODO$ might have to change it to date format later,
+            gross: 1901907
+
+        },{
+            name: "Wicked",
+            date: "2015-10-25", //$TODO$ might have to change it to date format later,
+            gross: 1621056
+
+        },
+        //
+        {
+            name: "Aladdin",
+            date: "2015-10-18", //$TODO$ might have to change it to date format later,
+            gross: 1558093
+
+        },{
+            name: "An American in Paris",
+            date: "2015-10-18", //$TODO$ might have to change it to date format later,
+            gross: 1402823
+
+        },{
+            name: "The Book of Mormon",
+            date: "2015-10-18", //$TODO$ might have to change it to date format later,
+            gross: 1497672
+
+        },{
+            name: "The Lion King",
+            date: "2015-10-18", //$TODO$ might have to change it to date format later,
+            gross: 1932132
+
+        },{
+            name: "Wicked",
+            date: "2015-10-18", //$TODO$ might have to change it to date format later,
+            gross: 1720707
+
+        },
+        //FIDDLER
+        {
+            name: "Fiddler on the Roof",
+            date: "2015-11-22", //$TODO$ might have to change it to date format later,
+            gross: 490058
+
+        },{
+            name: "Fiddler on the Roof",
+            date: "2015-11-29", //$TODO$ might have to change it to date format later,
+            gross: 1221715	
+
+        },{
+            name: "Fiddler on the Roof",
+            date: "2015-12-6", //$TODO$ might have to change it to date format later,
+            gross: 1062494
+
+        },{
+            name: "Fiddler on the Roof",
+            date: "2015-12-13", //$TODO$ might have to change it to date format later,
+            gross: 1047622
+
+        },{
+            name: "Fiddler on the Roof",
+            date: "2015-12-20", //$TODO$ might have to change it to date format later,
+            gross: 837216
+
+        },{
+            name: "Fiddler on the Roof",
+            date: "2015-12-27", //$TODO$ might have to change it to date format later,
+            gross: 1339255
+
+        },{
+            name: "Fiddler on the Roof",
+            date: "2016-1-3", //$TODO$ might have to change it to date format later,
+            gross: 1725263
+
+        },
+        
+        //BEAUTIFUL
+        {
+            name: "Beautiful",
+            date: "2016-1-3", //$TODO$ might have to change it to date format later,
+            gross: 1042634
+
+        },{
+            name: "Beautiful",
+            date: "2015-12-27", //$TODO$ might have to change it to date format later,
+            gross: 975638
+
+        },{
+            name: "Beautiful",
+            date: "2015-12-20", //$TODO$ might have to change it to date format later,
+            gross: 939618
+
+        },{
+            name: "Beautiful",
+            date: "2015-12-13", //$TODO$ might have to change it to date format later,
+            gross: 1137047
+
+        },{
+            name: "Beautiful",
+            date: "2015-12-6", //$TODO$ might have to change it to date format later,
+            gross: 1054458
+
+        },{
+            name: "Beautiful",
+            date: "2015-11-29", //$TODO$ might have to change it to date format later,
+            gross: 970794
+
+        },{
+            name: "Beautiful",
+            date: "2015-11-22", //$TODO$ might have to change it to date format later,
+            gross: 949971
+
+        },{
+            name: "Beautiful",
+            date: "2015-11-15", //$TODO$ might have to change it to date format later,
+            gross: 1059125
+
+        },{
+            name: "Beautiful",
+            date: "2015-11-8", //$TODO$ might have to change it to date format later,
+            gross: 1016469
+
+        },{
+            name: "Beautiful",
+            date: "2015-11-1", //$TODO$ might have to change it to date format later,
+            gross: 872132
+
+        },{
+            name: "Beautiful",
+            date: "2015-10-25", //$TODO$ might have to change it to date format later,
+            gross: 1075200
+
+        },{
+            name: "Beautiful",
+            date: "2015-10-18", //$TODO$ might have to change it to date format later,
+            gross: 1063244
+
+        },{
+            name: "Beautiful",
+            date: "2015-10-11", //$TODO$ might have to change it to date format later,
+            gross: 1124410
+
+        },{
+            name: "Beautiful",
+            date: "2015-10-4", //$TODO$ might have to change it to date format later,
+            gross: 1047531
+
+        },{
+            name: "Beautiful",
+            date: "2015-9-27", //$TODO$ might have to change it to date format later,
+            gross: 1042971
+
+        },{
+            name: "Beautiful",
+            date: "2015-9-20", //$TODO$ might have to change it to date format later,
+            gross: 1022112
+
+        },{
+            name: "Beautiful",
+            date: "2015-9-13", //$TODO$ might have to change it to date format later,
+            gross: 1022112
+
+        }
+        ];
 
         onReady(dummyData);
     }
