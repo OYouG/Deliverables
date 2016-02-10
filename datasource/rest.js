@@ -181,20 +181,18 @@ Datasource.prototype = {
     
     getSentimentData : function(start, end, onGo){
         var dummyData = [{
-            label: "Positive",
-            value: 60
+            label: "Man",
+            value: 586
         }, {
-            label: "Negative",
-            value: 7
-        }, {
-            label: "Neutral",
-            value: 33
+            label: "Woman",
+            value: 988
         }];
         
         onGo(dummyData);
     },
     
     getMentionsData : function(start, end, onSuccess){
+        var returnData = []
         var dummyData = [{
             mentionSource: "Tumblr",
             Total: 25711,
@@ -252,6 +250,7 @@ Datasource.prototype = {
 
     getGrossTicketSales : function(start, end, onReady) {
         //$TODO$ to be replaced by an ajax call to the server
+        var returnData = [];
         var dummyData = [{
             name: "Beautiful",
             date: "2015-3-15", //$TODO$ might have to change it to date format later,
@@ -1639,7 +1638,685 @@ Datasource.prototype = {
 
         }
         ];
+        
+        console.log("start: " + (start==null));
+        console.log("end: " + end);
+        console.log("dummyData: " + dummyData);
+        
+        if (start == null || start == ''){
+            onReady(dummyData);
+        } else {
+            
+        function gd(year, month, day) {
+          return new Date(year, month - 1, day).getTime();
+        }
+        
+        var startSplit = start.split("/");
+        var endSplit = end.split("/");
+        console.log(start);
+        //console.log("TEST: " + (gd(dumSplit[0],dumSplit[1],dumSplit[2]) >= gd(startSplit[2], startSplit[1], startSplit[0])) + " - END TEST: " + (gd(dumSplit[0],dumSplit[1],dumSplit[2]) <= gd(endSplit[2], endSplit[1], endSplit[0])));
+        for (i=0;i<dummyData.length;i++){
+            var item = dummyData[i];
+            var dumSplit = item.date.split("-");
+            if ((gd(dumSplit[0],dumSplit[1],dumSplit[2]) >= gd(startSplit[2], startSplit[0], startSplit[1])) && (gd(dumSplit[0],dumSplit[1],dumSplit[2]) <= gd(endSplit[2], endSplit[0], endSplit[1]))){
+                returnData.push(item);
+            } 
+        }
+        onReady(returnData);
+        }
+    },
+        getFollowers : function(start, end, site, onReady) {
+        //$TODO$ to be replaced by an ajax call to the server
+        var returnData = [];
+        var dummyData = [{
+            name: "Twitter",
+            date: "2016-1-1", //$TODO$ might have to change it to date format later,
+            followers: 100
 
-        onReady(dummyData);
+        },{
+            name: "Twitter",
+            date: "2016-1-2", //$TODO$ might have to change it to date format later,
+            followers: 157
+
+        },{
+            name: "Twitter",
+            date: "2016-1-3", //$TODO$ might have to change it to date format later,
+            followers: 64
+
+        },{
+            name: "Twitter",
+            date: "2016-1-4", //$TODO$ might have to change it to date format later,
+            followers: 22
+
+        },{
+            name: "Twitter",
+            date: "2016-1-5", //$TODO$ might have to change it to date format later,
+            followers: 10
+
+        },{
+            name: "Twitter",
+            date: "2016-1-6", //$TODO$ might have to change it to date format later,
+            followers: -15
+
+        },{
+            name: "Twitter",
+            date: "2016-1-7", //$TODO$ might have to change it to date format later,
+            followers: -5
+
+        },{
+            name: "Twitter",
+            date: "2016-1-8", //$TODO$ might have to change it to date format later,
+            followers: 16
+
+        },{
+            name: "Twitter",
+            date: "2016-1-9", //$TODO$ might have to change it to date format later,
+            followers: 54
+
+        },{
+            name: "Twitter",
+            date: "2016-1-10", //$TODO$ might have to change it to date format later,
+            followers: 227
+
+        },{
+            name: "Twitter",
+            date: "2016-1-11", //$TODO$ might have to change it to date format later,
+            followers: 278
+
+        },{
+            name: "Twitter",
+            date: "2016-1-12", //$TODO$ might have to change it to date format later,
+            followers: 250
+
+        },{
+            name: "Twitter",
+            date: "2016-1-13", //$TODO$ might have to change it to date format later,
+            followers: 200
+
+        },{
+            name: "Twitter",
+            date: "2016-1-14", //$TODO$ might have to change it to date format later,
+            followers: 140
+
+        },{
+            name: "Twitter",
+            date: "2016-1-15", //$TODO$ might have to change it to date format later,
+            followers: 105
+
+        },{
+            name: "Twitter",
+            date: "2016-1-16", //$TODO$ might have to change it to date format later,
+            followers: 60
+
+        },{
+            name: "Twitter",
+            date: "2016-1-17", //$TODO$ might have to change it to date format later,
+            followers: 55
+
+        },{
+            name: "Twitter",
+            date: "2016-1-18", //$TODO$ might have to change it to date format later,
+            followers: 27
+
+        },{
+            name: "Twitter",
+            date: "2016-1-19", //$TODO$ might have to change it to date format later,
+            followers: 13
+
+        },{
+            name: "Twitter",
+            date: "2016-1-20", //$TODO$ might have to change it to date format later,
+            followers: 15
+
+        },{
+            name: "Twitter",
+            date: "2016-1-21", //$TODO$ might have to change it to date format later,
+            followers: 11
+
+        },{
+            name: "Twitter",
+            date: "2016-1-22", //$TODO$ might have to change it to date format later,
+            followers: 12
+
+        },{
+            name: "Twitter",
+            date: "2016-1-23", //$TODO$ might have to change it to date format later,
+            followers: 19
+
+        },{
+            name: "Twitter",
+            date: "2016-1-24", //$TODO$ might have to change it to date format later,
+            followers: 24
+
+        },{
+            name: "Twitter",
+            date: "2016-1-25", //$TODO$ might have to change it to date format later,
+            followers: 5
+
+        },{
+            name: "Twitter",
+            date: "2016-1-26", //$TODO$ might have to change it to date format later,
+            followers: 44
+
+        },{
+            name: "Twitter",
+            date: "2016-1-27", //$TODO$ might have to change it to date format later,
+            followers: 48
+
+        },{
+            name: "Twitter",
+            date: "2016-1-28", //$TODO$ might have to change it to date format later,
+            followers: 57
+
+        },{
+            name: "Twitter",
+            date: "2016-1-29", //$TODO$ might have to change it to date format later,
+            followers: 68
+
+        },{
+            name: "Twitter",
+            date: "2016-1-30", //$TODO$ might have to change it to date format later,
+            followers: 71
+
+        },{
+            name: "Twitter",
+            date: "2016-1-31", //$TODO$ might have to change it to date format later,
+            followers: 85
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-1", //$TODO$ might have to change it to date format later,
+            followers: 10
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-2", //$TODO$ might have to change it to date format later,
+            followers: 15
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-3", //$TODO$ might have to change it to date format later,
+            followers: 54
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-4", //$TODO$ might have to change it to date format later,
+            followers: 72
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-5", //$TODO$ might have to change it to date format later,
+            followers: 80
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-6", //$TODO$ might have to change it to date format later,
+            followers: 55
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-7", //$TODO$ might have to change it to date format later,
+            followers: 20
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-8", //$TODO$ might have to change it to date format later,
+            followers: 10
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-9", //$TODO$ might have to change it to date format later,
+            followers: 5
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-10", //$TODO$ might have to change it to date format later,
+            followers: 45
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-11", //$TODO$ might have to change it to date format later,
+            followers: 87
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-12", //$TODO$ might have to change it to date format later,
+            followers: 104
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-13", //$TODO$ might have to change it to date format later,
+            followers: 156
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-14", //$TODO$ might have to change it to date format later,
+            followers: 187
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-15", //$TODO$ might have to change it to date format later,
+            followers: 227
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-16", //$TODO$ might have to change it to date format later,
+            followers: 287
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-17", //$TODO$ might have to change it to date format later,
+            followers: 210
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-18", //$TODO$ might have to change it to date format later,
+            followers: 150
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-19", //$TODO$ might have to change it to date format later,
+            followers: 105
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-20", //$TODO$ might have to change it to date format later,
+            followers: 100
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-21", //$TODO$ might have to change it to date format later,
+            followers: 75
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-22", //$TODO$ might have to change it to date format later,
+            followers: 64
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-23", //$TODO$ might have to change it to date format later,
+            followers: 35
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-24", //$TODO$ might have to change it to date format later,
+            followers: 22
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-25", //$TODO$ might have to change it to date format later,
+            followers: 27
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-26", //$TODO$ might have to change it to date format later,
+            followers: 18
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-27", //$TODO$ might have to change it to date format later,
+            followers: 24
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-28", //$TODO$ might have to change it to date format later,
+            followers: 17
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-29", //$TODO$ might have to change it to date format later,
+            followers: 26
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-30", //$TODO$ might have to change it to date format later,
+            followers: 32
+
+        },{
+            name: "Tumblr",
+            date: "2016-1-31", //$TODO$ might have to change it to date format later,
+            followers: 14
+
+        },{
+            name: "Facebook",
+            date: "2016-1-1", //$TODO$ might have to change it to date format later,
+            followers: 10
+
+        },{
+            name: "Facebook",
+            date: "2016-1-2", //$TODO$ might have to change it to date format later,
+            followers: 11
+
+        },{
+            name: "Facebook",
+            date: "2016-1-3", //$TODO$ might have to change it to date format later,
+            followers: 14
+
+        },{
+            name: "Facebook",
+            date: "2016-1-4", //$TODO$ might have to change it to date format later,
+            followers: 5
+
+        },{
+            name: "Facebook",
+            date: "2016-1-5", //$TODO$ might have to change it to date format later,
+            followers: 7
+
+        },{
+            name: "Facebook",
+            date: "2016-1-6", //$TODO$ might have to change it to date format later,
+            followers: 2
+
+        },{
+            name: "Facebook",
+            date: "2016-1-7", //$TODO$ might have to change it to date format later,
+            followers: 6
+
+        },{
+            name: "Facebook",
+            date: "2016-1-8", //$TODO$ might have to change it to date format later,
+            followers: 18
+
+        },{
+            name: "Facebook",
+            date: "2016-1-9", //$TODO$ might have to change it to date format later,
+            followers: 17
+
+        },{
+            name: "Facebook",
+            date: "2016-1-10", //$TODO$ might have to change it to date format later,
+            followers: 5
+
+        },{
+            name: "Facebook",
+            date: "2016-1-11", //$TODO$ might have to change it to date format later,
+            followers: 1
+
+        },{
+            name: "Facebook",
+            date: "2016-1-12", //$TODO$ might have to change it to date format later,
+            followers: 4
+
+        },{
+            name: "Facebook",
+            date: "2016-1-13", //$TODO$ might have to change it to date format later,
+            followers: 7
+
+        },{
+            name: "Facebook",
+            date: "2016-1-14", //$TODO$ might have to change it to date format later,
+            followers: 6
+
+        },{
+            name: "Facebook",
+            date: "2016-1-15", //$TODO$ might have to change it to date format later,
+            followers: 17
+
+        },{
+            name: "Facebook",
+            date: "2016-1-16", //$TODO$ might have to change it to date format later,
+            followers: 2
+
+        },{
+            name: "Facebook",
+            date: "2016-1-17", //$TODO$ might have to change it to date format later,
+            followers: 5
+
+        },{
+            name: "Facebook",
+            date: "2016-1-18", //$TODO$ might have to change it to date format later,
+            followers: 10
+
+        },{
+            name: "Facebook",
+            date: "2016-1-19", //$TODO$ might have to change it to date format later,
+            followers: 11
+
+        },{
+            name: "Facebook",
+            date: "2016-1-20", //$TODO$ might have to change it to date format later,
+            followers: 15
+
+        },{
+            name: "Facebook",
+            date: "2016-1-21", //$TODO$ might have to change it to date format later,
+            followers: 11
+
+        },{
+            name: "Facebook",
+            date: "2016-1-22", //$TODO$ might have to change it to date format later,
+            followers: 12
+
+        },{
+            name: "Facebook",
+            date: "2016-1-23", //$TODO$ might have to change it to date format later,
+            followers: 19
+
+        },{
+            name: "Facebook",
+            date: "2016-1-24", //$TODO$ might have to change it to date format later,
+            followers: 14
+
+        },{
+            name: "Facebook",
+            date: "2016-1-25", //$TODO$ might have to change it to date format later,
+            followers: 5
+
+        },{
+            name: "Facebook",
+            date: "2016-1-26", //$TODO$ might have to change it to date format later,
+            followers: 24
+
+        },{
+            name: "Facebook",
+            date: "2016-1-27", //$TODO$ might have to change it to date format later,
+            followers: 14
+
+        },{
+            name: "Facebook",
+            date: "2016-1-28", //$TODO$ might have to change it to date format later,
+            followers: 11
+
+        },{
+            name: "Facebook",
+            date: "2016-1-29", //$TODO$ might have to change it to date format later,
+            followers: 7
+
+        },{
+            name: "Facebook",
+            date: "2016-1-30", //$TODO$ might have to change it to date format later,
+            followers: 6
+
+        },{
+            name: "Facebook",
+            date: "2016-1-31", //$TODO$ might have to change it to date format later,
+            followers: 3
+
+        },{
+            name: "Instagram",
+            date: "2016-1-1", //$TODO$ might have to change it to date format later,
+            followers: 120
+
+        },{
+            name: "Instagram",
+            date: "2016-1-2", //$TODO$ might have to change it to date format later,
+            followers: 187
+
+        },{
+            name: "Instagram",
+            date: "2016-1-3", //$TODO$ might have to change it to date format later,
+            followers: 175
+
+        },{
+            name: "Instagram",
+            date: "2016-1-4", //$TODO$ might have to change it to date format later,
+            followers: 154
+
+        },{
+            name: "Instagram",
+            date: "2016-1-5", //$TODO$ might have to change it to date format later,
+            followers: 144
+
+        },{
+            name: "Instagram",
+            date: "2016-1-6", //$TODO$ might have to change it to date format later,
+            followers: 55
+
+        },{
+            name: "Instagram",
+            date: "2016-1-7", //$TODO$ might have to change it to date format later,
+            followers: 10
+
+        },{
+            name: "Instagram",
+            date: "2016-1-8", //$TODO$ might have to change it to date format later,
+            followers: -17
+
+        },{
+            name: "Instagram",
+            date: "2016-1-9", //$TODO$ might have to change it to date format later,
+            followers: -54
+
+        },{
+            name: "Instagram",
+            date: "2016-1-10", //$TODO$ might have to change it to date format later,
+            followers: -44
+
+        },{
+            name: "Instagram",
+            date: "2016-1-11", //$TODO$ might have to change it to date format later,
+            followers: -67
+
+        },{
+            name: "Instagram",
+            date: "2016-1-12", //$TODO$ might have to change it to date format later,
+            followers: -75
+
+        },{
+            name: "Instagram",
+            date: "2016-1-13", //$TODO$ might have to change it to date format later,
+            followers: -80
+
+        },{
+            name: "Instagram",
+            date: "2016-1-14", //$TODO$ might have to change it to date format later,
+            followers: -55
+
+        },{
+            name: "Instagram",
+            date: "2016-1-15", //$TODO$ might have to change it to date format later,
+            followers: -21
+
+        },{
+            name: "Instagram",
+            date: "2016-1-16", //$TODO$ might have to change it to date format later,
+            followers: 10
+
+        },{
+            name: "Instagram",
+            date: "2016-1-17", //$TODO$ might have to change it to date format later,
+            followers: 5
+
+        },{
+            name: "Instagram",
+            date: "2016-1-18", //$TODO$ might have to change it to date format later,
+            followers: 4
+
+        },{
+            name: "Instagram",
+            date: "2016-1-19", //$TODO$ might have to change it to date format later,
+            followers: 10
+
+        },{
+            name: "Instagram",
+            date: "2016-1-20", //$TODO$ might have to change it to date format later,
+            followers: 14
+
+        },{
+            name: "Instagram",
+            date: "2016-1-21", //$TODO$ might have to change it to date format later,
+            followers: 16
+
+        },{
+            name: "Instagram",
+            date: "2016-1-22", //$TODO$ might have to change it to date format later,
+            followers: 14
+
+        },{
+            name: "Instagram",
+            date: "2016-1-23", //$TODO$ might have to change it to date format later,
+            followers: 17
+
+        },{
+            name: "Instagram",
+            date: "2016-1-24", //$TODO$ might have to change it to date format later,
+            followers: 27
+
+        },{
+            name: "Instagram",
+            date: "2016-1-25", //$TODO$ might have to change it to date format later,
+            followers: 14
+
+        },{
+            name: "Instagram",
+            date: "2016-1-26", //$TODO$ might have to change it to date format later,
+            followers: 24
+
+        },{
+            name: "Instagram",
+            date: "2016-1-27", //$TODO$ might have to change it to date format later,
+            followers: 21
+
+        },{
+            name: "Instagram",
+            date: "2016-1-28", //$TODO$ might have to change it to date format later,
+            followers: 14
+
+        },{
+            name: "Instagram",
+            date: "2016-1-29", //$TODO$ might have to change it to date format later,
+            followers: 15
+
+        },{
+            name: "Instagram",
+            date: "2016-1-30", //$TODO$ might have to change it to date format later,
+            followers: 11
+
+        },{
+            name: "Instagram",
+            date: "2016-1-31", //$TODO$ might have to change it to date format later,
+            followers: 16
+
+        }
+        ];
+        
+        console.log("start: " + (start==null));
+        console.log("end: " + end);
+        console.log("dummyData: " + dummyData);
+        
+        if (start == null || start == ''){
+            onReady(dummyData,site);
+        } else {
+            
+        function gd(year, month, day) {
+          return new Date(year, month - 1, day).getTime();
+        }
+        
+        var startSplit = start.split("/");
+        var endSplit = end.split("/");
+        console.log(start);
+        //console.log("TEST: " + (gd(dumSplit[0],dumSplit[1],dumSplit[2]) >= gd(startSplit[2], startSplit[1], startSplit[0])) + " - END TEST: " + (gd(dumSplit[0],dumSplit[1],dumSplit[2]) <= gd(endSplit[2], endSplit[1], endSplit[0])));
+        for (i=0;i<dummyData.length;i++){
+            var item = dummyData[i];
+            var dumSplit = item.date.split("-");
+            if ((gd(dumSplit[0],dumSplit[1],dumSplit[2]) >= gd(startSplit[2], startSplit[0], startSplit[1])) && (gd(dumSplit[0],dumSplit[1],dumSplit[2]) <= gd(endSplit[2], endSplit[0], endSplit[1]))){
+                if((site=="all") || (item.name==site)){
+                    returnData.push(item);
+                }
+            } 
+        }
+        onReady(returnData,site);
+        }
     }
 };
