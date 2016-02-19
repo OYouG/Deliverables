@@ -35,8 +35,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-
+    <script src="../datasource/rest.js"></script>
+    <script src="../controller/controller-flot.js"></script>
 
 </head>
 
@@ -456,7 +456,9 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="flot-chart">
-                                <div class="flot-chart-content" id="flot-bar-chart"></div>
+                                <div class="flot-chart-content" id="example-section25">
+                                     <div id="flotcontainer" style="height:200px; text-align: center; margin:0 auto;"></div>
+                                </div>
                             </div>
                         </div>
                         <!-- /.panel-body -->
@@ -503,10 +505,13 @@
     <script src="../bower_components/flot/jquery.flot.resize.js"></script>
     <script src="../bower_components/flot/jquery.flot.time.js"></script>
     <script src="../bower_components/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
-    <script src="../js/flot-data.js"></script>
+    <!-- <script src="../js/flot-data.js"></script> -->
+    
+    
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
+    
 
 </body>
 

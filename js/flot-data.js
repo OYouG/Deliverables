@@ -1,6 +1,6 @@
 //Flot Line Chart
 $(document).ready(function() {
-    console.log("document ready");
+/*    console.log("document ready");
     var offset = 0;
     plot();
 
@@ -46,7 +46,7 @@ $(document).ready(function() {
                 label: "cos(x)"
             }],
             options);
-    }
+    }*/
 });
 
 //Flot Pie Chart
